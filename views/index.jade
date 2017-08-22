@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  if errorMessage
+    div.errors
+        errorMessage
+  else
+    div.authenticatedContent
+        //p You shoud not see this page.
