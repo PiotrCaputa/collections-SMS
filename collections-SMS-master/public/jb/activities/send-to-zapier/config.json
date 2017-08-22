@@ -1,0 +1,67 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "version": "1.0",
+        "icon": "images/icon.png",
+        "iconSmall": "images/iconSmall.png",
+        "category": "customer"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "Collections SMS",
+            "description": "A custom Journey Builder activity for sending contact's data to a Zapier endpoint (API v1.1)"
+        }
+    },
+    "arguments": {
+        "execute": {
+            "inArguments": [],
+            "outArguments": [],
+            "url": "https://collections-SMS.herokuapp.com/jb/activities/send-to-zapier/execute/",
+            "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 10000
+        }
+    },
+    "configurationArguments": {
+       "applicationExtensionKey": "0f49daa1-4a21-4ed0-b7db-33965338f1aa",
+       "defaults": { 
+            "method": "POST",
+            "format": "json" 
+        },
+        "validate": {
+            "url": "https://collections-SMS.herokuapp.com/jb/activities/send-to-zapier/validate/",
+            "body": "",
+            "verb": "POST",
+            "useJwt": false
+        },
+        "save": {
+            "url": "https://collections-SMS.herokuapp.com/jb/activities/send-to-zapier/save/",
+            "verb": "POST",
+            "body": "",
+            "useJwt": false
+        },
+        "publish": {
+           "url": "https://collections-SMS.herokuapp.com/jb/activities/send-to-zapier/publish/",
+            "body": "",
+            "verb": "POST",
+            "useJwt": false
+        }
+    },
+    "userInterfaces": {
+        "configModal": {
+            "height": 200,
+            "width": 500,
+            "fullscreen": false
+        },
+        "runningModal": {
+            "url": "runningModal.html"
+        },
+        "runningHover": {
+            "url": "runningHover.html"
+        }
+    }
+}
