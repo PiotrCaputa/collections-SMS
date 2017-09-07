@@ -97,7 +97,7 @@ exports.execute = function( req, res ) {
     // it must be one JSON string { "FirstName": "Test", "LastName": "User", "EmailAddress": "test.user@spotcap.com", "ID": "customevent", "Phone": "15780270989" }
     var data = makeJson(activity.inArguments);
     var headers = {'User-Agent': 'sfmc-activity-zapier'};
-    var webhookUrl = "https://requestb.in/1f1fy9z1";
+    var webhookUrl = "https://hooks.zapier.com/hooks/catch/2476704/ruiw92/";
     // Make POST request to Zapier endpoint
     executeHttpRequest(webhookUrl, "POST", headers, data, "json");
     
