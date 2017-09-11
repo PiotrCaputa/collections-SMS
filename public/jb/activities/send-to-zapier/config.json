@@ -27,7 +27,7 @@
         }
     },
     "configurationArguments": {
-       "applicationExtensionKey": "0f49daa1-4a21-4ed0-b7db-33965338f1aa",
+       "applicationExtensionKey": "collections-sms-key",
        "defaults": { 
             "method": "POST",
             "format": "json" 
